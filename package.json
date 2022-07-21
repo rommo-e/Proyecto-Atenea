@@ -1,0 +1,21 @@
+{
+  "name": "star",
+  "version": "1.0.0",
+  "description": "This is my first time using scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<key>"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "Mauricio Rivera",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

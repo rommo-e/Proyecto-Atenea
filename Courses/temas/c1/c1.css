@@ -1,0 +1,92 @@
+/* Para todo el documento */
+
+
+html{
+    scroll-behavior:smooth;
+}
+/* Para todos los elementos */
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Para el color del fondo */
+body{
+    background: #fbf8dd;
+    font-family: "Playfair",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Para la posición del contenedor */
+.container {
+    position: relative;
+    width: 100%;
+}
+
+/* Posición de las secciones */
+
+.container section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    line-height: 100%;
+}
+
+/* Para el color de las secciones impares */
+.container section:nth-of-type(2n+1) {
+    background:#dae8fb;
+}
+/* Para el color de las secciones pares */
+.container section:nth-of-type(2n+1) {
+    background:#dae8fb;
+}
+
+/* Para los encabezados */
+.container section h1{
+text-align: center;
+font-size: 70px;
+text-transform: uppercase;
+}
+
+
+/* Para los contenedores de las listas */
+
+.container ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #c5deff;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+}
+
+
+/* Para los contenedores de los elementos de la lista */
+
+.container ul li{
+    float: left;
+    width: calc(100%/5);
+    height: 100%;
+    float: left;
+}
+
+
+/* Para el estilo de los links de los elementos de la lista */
+
+.container ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+
+/* Para el comportamiento de los links */
+.container ul li a:hover{
+    background: #003598;
+}

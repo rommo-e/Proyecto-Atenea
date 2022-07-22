@@ -229,3 +229,13 @@ button.sign-upt{
     /* transform: scale(1.5,1.5); */
 /* } */
 
+
+.historia {
+    transform: translatex(35%) translateY(10%);
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 10px;
+    margin-bottom: 12px;
+    display: flex;
+}

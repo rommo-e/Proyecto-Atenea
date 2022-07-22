@@ -1,4 +1,4 @@
-$(".option").onmouse(function () {
+$(".option").addEventListener(function () {
   $(".option").removeClass("active");
   $(this).addClass("active");
 });

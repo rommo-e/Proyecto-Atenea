@@ -200,9 +200,9 @@ button.sign-up{
   margin: 1em;
   margin-bottom: 3em;
   display: flex;
-  align-items: flex-end;
+  align-items: top;
   background-size: cover;
-  background-position: top;
+  background-position:bottom;
   box-shadow: 0 0 5em -1em rgb(100, 100, 100);
   transition: all, var(--transition-time);
   position: relative;

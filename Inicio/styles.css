@@ -1,5 +1,5 @@
-/* this is for telling the browser where it can find the font we want to use */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Para las fuentes, se le dice al navegador que hacer */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 /* Para el gradiente de fondo */
 html, body{
@@ -219,6 +219,7 @@ button.sign-up{
   margin: 0;
   font-size: 1.5em;
   line-height: 1.2em;
+  font-family: 'Lato', sans-serif;
 }
 
 .card p {

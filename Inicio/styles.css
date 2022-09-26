@@ -4,13 +4,21 @@
 /* Para el gradiente de fondo */
 html, body{
     height: 100%;
+    width: 100%;
     font-family: Roboto, sans-serif;
-    background-image: url(./img/bg.svg);
+    background-image: url(./img/line.svg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    justify-content: center;
     height: 100vh;
-    margin: 0 auto;
+    margin: 1 auto;
     padding: 0;
+}
+
+.capa{
+  transform: translate(20%,-1000%);
+  display: flex;
+
 }
 
 /* This part is for the header  */
@@ -28,7 +36,7 @@ html, body{
 }
 /* For the links */
 a{
-    color: rgb(255, 255, 255);
+    color: rgb(25, 50, 112);
     text-decoration: none;
     font-size: 24px;
 }
@@ -52,7 +60,7 @@ ul{
 
 .modal{
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     padding: 16px;
     display: flex;
@@ -113,26 +121,19 @@ button.sign-up{
 /* This is for the fixed footer */
 .footer {
     height: 72px;
-    background: hsl(50, 100%, 92%);
-    color: rgb(0, 0, 0);
+    background: hsl(213, 85%, 35%);
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
-    position: relative;
+    position:relative;
     width: 100%;
+    margin: 0 1;
   }
 
 
-  /* Para el fondo de la pagina */
-/* .background-image{
-    background-image: url(/Users/rommo/Desktop/FOUNDATIONS-OP/PORTAFOLIO/star/Landing-Page/img/chisp.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-    margin: 0;
-    padding: 0;
-} */
+
 
 
 /* Para la imagen de perfil */
@@ -354,3 +355,5 @@ button.sign-up{
     margin: 0;
   }
 }
+
+

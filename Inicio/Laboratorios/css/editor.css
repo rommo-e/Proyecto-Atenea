@@ -1,0 +1,716 @@
+
+/* Para las fuentes, se le dice al navegador que hacer */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+/* Para el gradiente de fondo */
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    background-image: url(./img/line.svg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    justify-content: center;
+    height: 100vh;
+    margin: 1 auto;
+    padding: 0;
+}
+
+.capa{
+  transform: translate(20%,-1000%);
+  display: flex;
+
+}
+
+/* This part is for the header  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px;
+    gap: 10px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+/* For the links */
+a{
+    color: rgb(25, 50, 112);
+    text-decoration: none;
+    font-size: 24px;
+}
+/* For the unordered list */
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    gap: 100px;
+}
+
+/* Here is where we specify the modal */
+.contop{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.modal{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    transform: translateX(5%);
+}
+
+/* Flechas */
+.flecha,.flecha2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.flecha{
+  transform: translateX(205%);
+}
+
+.flecha2{
+  transform: translateX(305%); 
+}
+
+/* Boton opcional */
+
+button.sign-up{
+    background: linear-gradient(90deg, #47bc55, #55e7fc);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 26px;
+    margin: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is for the fixed footer */
+.footer {
+    height: 72px;
+    background: hsl(213, 85%, 35%);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    position:relative;
+    width: 100%;
+    margin: 0 1;
+  }
+
+
+
+
+
+/* Para la imagen de perfil */
+.prof{
+    margin-right: .5rem;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    display: flex;
+}
+
+
+/* img:hover{ */
+    /* transform: scale(1.5,1.5); */
+/* } */
+
+
+.historia {
+    transform: translatex(35%) translateY(10%);
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 10px;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+
+/* Para el selector de trayectoria después del perfilamiento */
+
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+}
+
+.card {
+  --bg-filter-opacity: 0.10;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, var(--bg-filter-opacity)),
+      rgba(0, 0, 0, var(--bg-filter-opacity))
+    ),
+    var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+  margin-bottom: 3em;
+  display: flex;
+  align-items: top;
+  background-size: cover;
+  background-position:bottom;
+  box-shadow: 0 0 5em -1em rgb(100, 100, 100);
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: 'Lato', sans-serif;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: "Open Sans";
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: 0.8;
+}
+
+.card:before,
+.card:after {
+  content: "";
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before,
+.card:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: .2rem;
+  margin-left: 1rem;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space .num {
+    /margin-left: 0;
+    /text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
+
+
+/* Animacion de los nodos */
+
+.socialAnimation {
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  transform: translateX(90%);
+}
+.socialAnimation li {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+  list-style-type: none;
+  -webkit-animation: scaleLi 4s ease-in-out infinite;
+  -moz-animation: scaleLi 4s ease-in-out infinite;
+  -o-animation: scaleLi 4s ease-in-out infinite;
+  -ms-animation: scaleLi 4s ease-in-out infinite;
+  animation: scaleLi 4s ease-in-out infinite;
+}
+@-webkit-keyframes scaleLi {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes scaleLi {
+  0% {
+    -moz-transform: scale(1);
+  }
+  45% {
+    -moz-transform: scale(1);
+  }
+  60% {
+    -moz-transform: scale(1.2);
+  }
+  75% {
+    -moz-transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes scaleLi {
+  0% {
+    -o-transform: scale(1);
+  }
+  45% {
+    -o-transform: scale(1);
+  }
+  60% {
+    -o-transform: scale(1.2);
+  }
+  75% {
+    -o-transform: scale(1);
+  }
+  100% {
+    -o-transform: scale(1);
+  }
+}
+@-ms-keyframes scaleLi {
+  0% {
+    -ms-transform: scale(1);
+  }
+  45% {
+    -ms-transform: scale(1);
+  }
+  60% {
+    -ms-transform: scale(1.2);
+  }
+  75% {
+    -ms-transform: scale(1);
+  }
+  100% {
+    -ms-transform: scale(1);
+  }
+}
+@keyframes scaleLi {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.socialAnimation .person {
+  width: 80px;
+  height: 80px;
+  margin: 110px 0 0 160px;
+  z-index: 9;
+}
+.socialAnimation .person img {
+  width: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+.socialAnimation li div.connector {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 5px;
+}
+.socialAnimation li div.connector span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  margin: -5px 0 0 0;
+  position: absolute;
+  -webkit-animation: connections 4s ease-in-out infinite;
+  -moz-animation: connections 4s ease-in-out infinite;
+  -o-animation: connections 4s ease-in-out infinite;
+  -ms-animation: connections 4s ease-in-out infinite;
+  animation: connections 4s ease-in-out infinite;
+}
+.socialAnimation li div.connector span.two {
+  -webkit-animation: connections 4s ease-in-out infinite 1s;
+  -moz-animation: connections 4s ease-in-out infinite;
+  -o-animation: connections 4s ease-in-out infinite;
+  -ms-animation: connections 4s ease-in-out infinite;
+  animation: connections 4s ease-in-out infinite 1s;
+}
+
+@-webkit-keyframes connections {
+  0% {
+    left: 0;
+  }
+  80% {
+    left: 100%;
+  }
+}
+@-moz-keyframes connections {
+  0% {
+    left: 0;
+  }
+  80% {
+    left: 100%;
+  }
+}
+@-o-keyframes connections {
+  0% {
+    left: 0;
+  }
+  80% {
+    left: 100%;
+  }
+}
+@-ms-keyframes connections {
+  0% {
+    left: 0;
+  }
+  80% {
+    left: 100%;
+  }
+}
+@keyframes connections {
+  0% {
+    left: 0;
+  }
+  80% {
+    left: 100%;
+  }
+}
+
+.socialAnimation li .containerImg {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+  z-index: 10;
+  background-repeat: no-repeat;
+}
+
+.socialAnimation .facebook {
+  width: 90px;
+  height: 90px;
+}
+.socialAnimation .facebook .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/facebookIcon.png");
+}
+.socialAnimation .facebook:hover .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/facebookIconHover.png");
+}
+.socialAnimation .facebook .containerImg {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
+.socialAnimation .facebook div.connector {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 5px;
+  width: 150px;
+  margin: 105px 0 0 65px;
+
+  transform: rotate(-115deg);
+  -webkit-transform: rotate(-145deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-115deg);
+}
+
+.socialAnimation .googlePlus {
+  width: 85px;
+  height: 85px;
+  margin: 20px 0 0 240px;
+}
+.socialAnimation .googlePlus .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/googlePlusIcon.png");
+}
+.socialAnimation .googlePlus:hover .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/googlePlusIconHover.png");
+}
+.socialAnimation .googlePlus .containerImg {
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+}
+.socialAnimation .googlePlus div.connector {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 5px;
+  width: 70px;
+  margin: 90px 0 0 -35px;
+
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.socialAnimation .twitter {
+  width: 60px;
+  height: 60px;
+  margin: 120px 0 0 300px;
+}
+.socialAnimation .twitter .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/twitterIcon.png");
+}
+.socialAnimation .twitter:hover .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/twitterIconHover.png");
+}
+.socialAnimation .twitter .containerImg {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+.socialAnimation .twitter div.connector {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 5px;
+  width: 90px;
+  margin: 25px 0 0 -85px;
+
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.socialAnimation .linkedin {
+  width: 50px;
+  height: 50px;
+  margin: 150px 0 0 40px;
+}
+.socialAnimation .linkedin .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/linkedInIcon.png");
+}
+.socialAnimation .linkedin:hover .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/linkedInIconHover.png");
+}
+.socialAnimation .linkedin .containerImg {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+.socialAnimation .linkedin div.connector {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 5px;
+  width: 150px;
+  margin: 8px 0 0 25px;
+
+  transform: rotate(-190deg);
+  -webkit-transform: rotate(-190deg);
+  -moz-transform: rotate(-190deg);
+  -ms-transform: rotate(-190deg);
+  -o-transform: rotate(-190deg);
+}
+
+.socialAnimation .yt {
+  width: 80px;
+  height: 80px;
+  margin: 210px 0 0 150px;
+}
+.socialAnimation .yt .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/ytIcon.png");
+}
+.socialAnimation .yt:hover .containerImg {
+  background-image: url("http://szymondziewonski.com/pictures/website/ytIconHover.png");
+}
+.socialAnimation .yt .containerImg {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+}
+.socialAnimation .yt div.connector {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 5px;
+  width: 80px;
+  margin: -5px 0 0 5px;
+
+  transform: rotate(100deg);
+  -webkit-transform: rotate(100deg);
+  -moz-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+}

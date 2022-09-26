@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function(event){
     // El texto que se muestra con animación
-    var dataText = [ "PROYECTO ATENEA"];
+    var dataText = [ "CAPA"];
     
     // Esto comienza el efecto de maquina de escribir
     // Continua hasta el final del texto

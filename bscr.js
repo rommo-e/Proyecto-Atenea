@@ -1,3 +1,4 @@
+// Animacion de las ventanas
 const buttons = document.querySelectorAll('.ripple')
 
 buttons.forEach(btn => {
@@ -17,3 +18,5 @@ buttons.forEach(btn => {
 })
 
 
+
+// Animacion del fondo

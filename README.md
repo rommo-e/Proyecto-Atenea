@@ -1,2 +1,0 @@
-# Proyecto-Atenea
-Con el proyecto Atenea buscamos servir, ayudar y enseñar a los grupos de mujeres en grupos vulnerables en un espacio seguro, plural y accesible. Asimismo mostrar las posibilidades existentes en la educación ; está como el punto de partida fundamental para hallar su propia autonomía. Esto con ayuda de un acercamiento introductorio  práctico diverso que les permite  interactuar con las tecnologías emergentes.
